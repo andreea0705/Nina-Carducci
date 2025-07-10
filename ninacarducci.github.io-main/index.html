@@ -42,12 +42,6 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
-
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
 </head>
 
 <body>
@@ -106,7 +100,7 @@
 		</div>
 		<div id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina.webp" alt="nina">
+				<img src="./assets/images/nina.webp" alt="nina" fetchpriority="high">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -139,16 +133,16 @@
 						alt="mariage couple" />
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-						alt="portrait ade" />
+						alt="portrait ade" loading="lazy"/>
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-						alt="mariage hand " />
+						alt="mariage hand " loading="lazy"/>
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-						alt="portrait nino" />
+						alt="portrait nino" loading="lazy"/>
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-						alt="concert austin" />
+						alt="concert austin" loading="lazy"/>
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
 						alt="entreprise mateus" />
@@ -233,12 +227,16 @@
 					</form>
 				</div>
 				<div class="picture right">
-					<img src="./assets/images/camera.webp" alt="camera">
+					<img src="./assets/images/camera.webp" alt="camera" loading="lazy">
 				</div>
 			</div>
 		</div>
 	</footer>
 
 </body>
-
+	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 </html>
